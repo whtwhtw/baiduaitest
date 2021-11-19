@@ -1,0 +1,12 @@
+%cd ~/work/PaddleOCR
+!python3 tools/infer/predict_system.py \
+    --image_dir="../../test" \
+    --det_model_dir="./inference/det_db" \
+    --rec_model_dir="./inference/rec_rare" \
+    --rec_image_shape="3, 32, 320" \
+    --rec_char_type="ch" \
+    --rec_algorithm="RARE" \
+    --use_space_char False \
+    --max_text_length 7 \
+    --rec_char_dict_path="../word_dict.txt" \
+    --use_gpu False 
