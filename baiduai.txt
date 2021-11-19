@@ -10,3 +10,5 @@
     --max_text_length 7 \
     --rec_char_dict_path="../word_dict.txt" \
     --use_gpu False 
+
+python3
